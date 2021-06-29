@@ -1,0 +1,71 @@
+{
+  "name": "selfish",
+  "id": "selfish",
+  "version": "1.1.0",
+  "description": "Class-free, pure prototypal multiple inheritance",
+  "keywords": [
+    "oop",
+    "multiple",
+    "inheritance",
+    "prototype",
+    "class",
+    "micro",
+    "class-free"
+  ],
+  "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
+  "contributors": [
+    "Eduardo San Martin Morote <i@posva.net> (http://posva.net)"
+  ],
+  "homepage": "https://github.com/Gozala/selfish",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gozala/selfish.git",
+    "web": "https://github.com/Gozala/selfish"
+  },
+  "bugs": {
+    "url": "http://github.com/Gozala/selfish/issues/"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1",
+    "should": "^5.2.0"
+  },
+  "testling": {
+    "harness": "mocha-bdd",
+    "files": "test/*.js",
+    "browsers": {
+      "iexplore": [
+        9,
+        10
+      ],
+      "chrome": [
+        16,
+        20,
+        25,
+        "canary"
+      ],
+      "firefox": [
+        10,
+        15,
+        16,
+        17,
+        18,
+        "nightly"
+      ],
+      "safari": [
+        5,
+        6
+      ],
+      "opera": [
+        12
+      ]
+    }
+  },
+  "main": "./selfish.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "license": "MIT"
+}
